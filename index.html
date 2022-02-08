@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Ratio CSS</title>
+    <style>:root {
+        --space: 10px;
+      }
+      
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: var(--space);
+      }
+      
+      .main-container {
+        position: relative;
+        height: calc(100vh - var(--space)*2);
+        min-width: calc(9*(100vh - var(--space)*2)/16);
+        background-color: red;
+      }
+      
+      
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+          <span>16/9</span>
+        </div>
+      </div>
+</body>
+</html>
